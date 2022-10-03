@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(IMG_20221003_211325.jpg);
+    background-repeat: no-repeat;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.img{
+    margin: 0px;
+    padding: 3px;
+}
+.title{
+    background-color: lightgrey;
+    width: 100%;
+    display: inline-flex;
+
+}
+.menu-bar{
+    background: yellowgreen;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 100px;
+    margin: 18px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+background: greenyellow;
+border-radius: 3px;
+}
+.menubar .fa
+{
+    margin-right: 8px;
+}
+.sub-menu1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:hover{
+    color: #b2ff00;
+}
+.fa-angle-right{
+    float: right;
+}
+button{
+    background-color: blue;
+    color: #fff;
+    margin: 20px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
